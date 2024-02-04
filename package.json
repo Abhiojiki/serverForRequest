@@ -1,0 +1,14 @@
+{
+  "name": "scriptwithabhi",
+  "version": "1.0.0",
+  "description": "This will be act as proxy server",
+  "main": "Nodescript.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinavhatela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
