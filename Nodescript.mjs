@@ -45,7 +45,7 @@ app.use(express.json());
 // Enable CORS for all routes
 app.use(cors());
 
-app.post('/username', (req, res) => {
+app.post('/setusername', (req, res) => {
   const { username } = req.body;
   globalUsername = username; // Store the username in the global variable
   console.log('Received username:', globalUsername);
@@ -74,7 +74,7 @@ app.use(cors());
 const apiUrl = 'https://alfa-leetcode-api.vercel.app';
 
 // Define routes for different endpoints
-app.get('/username', async (req, res) => {
+app.get('/getusername', async (req, res) => {
   try {                          
     // const response = await fetch('https://alfa-leetcode-api.vercel.app/AbhinavB1203')
     const response = await fetch(`${apiUrl}/${globalUsername}`);
